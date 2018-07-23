@@ -69,6 +69,7 @@ def getRep(imgPath):
     if bgrImg is None:
         raise Exception("Unable to load image: {}".format(imgPath))
     rgbImg = cv2.cvtColor(bgrImg, cv2.COLOR_BGR2RGB)
+    print(cv2.CAP_PROP_FRAME_COUNT)
 
     if args.verbose:
         print("  + Original size: {}".format(rgbImg.shape))

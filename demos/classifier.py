@@ -227,8 +227,7 @@ if __name__ == '__main__':
     parser.add_argument('--verbose', action='store_true')
 
     subparsers = parser.add_subparsers(dest='mode', help="Mode")
-    trainParser = subparsers.add_parser('train',
-                                        help="Train a new classifier.")
+    trainParser = subparsers.add_parser('train', help="Train a new classifier.")
     trainParser.add_argument('--ldaDim', type=int, default=-1)
     trainParser.add_argument(
         '--classifier',
