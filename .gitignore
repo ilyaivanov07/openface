@@ -12,7 +12,6 @@ models/facenet/*.t7
 models/dlib/shape_predictor_68_face_landmarks.dat
 
 *.pyc
-*.mp4
 
 images/examples-aligned
 
